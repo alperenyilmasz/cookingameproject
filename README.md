@@ -1,49 +1,58 @@
-Burger Restaurant Game with Unity
-This project is a burger preparation and restaurant management simulation developed using the Unity Game Engine. Players serve adorable animal customers and navigate kitchen challenges to complete each level.
+# 🍔 Burger Restaurant Rush (3D Interactive Simulation)
 
-📜 Description
-The main objective is to prepare and serve customer orders accurately and swiftly to various animal guests (such as bears, ducks, rabbits, and more). Each stage presents unique kitchen puzzles, spatial hazards, and evolving mechanics that test player timing and coordination.
+**Burger Restaurant Rush** is a 3D time-management and cooking simulation game developed in Unity. While designed as an engaging gameplay experience, the project's core architecture focuses on **dynamic object interaction, real-time state management, and user interface (UI) integration** using C#.
 
-✨ Features
-Multi-Stage Progression: Distinct level designs featuring progressive difficulty (BolumIki, BolumUc).
+This project demonstrates my ability to build structured 3D environments, manage complex user-task evaluations (e.g., verifying if a customer's specific order matches the assembled ingredients), and create responsive UI systems.
 
-Charming Customer Characters: Animated animal patrons including bears, ducks, and rabbits.
+## 🚀 Technical Highlights & Transferable Skills
 
-Interactive Kitchen Environment: Dynamic workstations for picking, preparing, and serving food items.
+The following systems were developed from scratch, showcasing skills directly applicable to interactive 3D applications, training simulators, and XR environments:
 
-Environmental Mechanics: Custom level hazards such as falling platforms (FallingPlatform.cs) and electric switches (ElectricSwitch.cs).
+*   **Task Validation & Assessment Logic:** 
+    *   Developed a dynamic order-tracking system. The system constantly evaluates the player's actions against a requested goal (customer order), tracks the sequence of actions, and calculates success/failure states in real-time. 
+    *   *Technical aspect:* Object-Oriented C# scripts handling state machines and logical condition checking.
+*   **3D Object Interaction & Physics:** 
+    *   Implemented robust mechanics for selecting, grabbing, and combining 3D objects within the scene.
+    *   *Technical aspect:* Utilizing Unity's Rigidbody, Colliders, and Raycasting systems to ensure smooth user interaction with environmental elements.
+*   **Dynamic UI/UX Management:** 
+    *   Created intuitive, real-time user interfaces that display current objectives, time limits, and feedback without breaking the 3D immersion.
+    *   *Technical aspect:* Unity UI Canvas, event-driven UI updates, and dynamic text/image rendering based on game state.
+*   **Level & Scene Architecture:** 
+    *   Structured a multi-level progression system (3 distinct levels) with increasing difficulty, demonstrating the ability to manage scene loading, persistent data across scenes, and structured project hierarchies.
 
-Complete Game Loop: Structured flow with a main menu, loading screens, game over/victory panels, and scene transitions.
+## 🛠️ Technologies Used
+*   **Game Engine:** Unity 3D
+*   **Programming Language:** C# (Object-Oriented Programming)
+*   **Key Concepts:** Event Delegates, Collision Detection, UI Canvas Management, Scene Management, State Tracking.
 
-🚀 Getting Started
-Follow these steps to run the project locally on your machine:
+## 🎮 Gameplay Overview
+Players take on the role of a chef managing a busy burger restaurant. The core loop involves:
+1.  **Receiving Orders:** UI displays randomized customer requests.
+2.  **Preparation (Interaction):** Moving between stations to cook meat, chop vegetables, and assemble ingredients in the correct order.
+3.  **Delivery & Evaluation:** The system checks the final assembled 3D object against the initial order data, scoring the player based on accuracy and speed.
 
-Clone this repository or download it as a .zip archive:
-
-Bash
-git clone https://github.com/<your-username>/<repo-name>.git
-Open Unity Hub and click Add to locate the project folder.
-
-Ensure you have Unity Editor version 2020.3.38f1 (or compatible LTS) installed.
-
-Navigate to Assets/Scenes/ and open MainMenuScane.unity.
-
-Click the Play (▶) button in the Unity Editor to start the game.
-
-🛠️ Built With & Assets
-Game Engine: Unity 3D (2020.3.38f1)
-
-Programming Language: C#
-
-3D Assets: Modular low-poly 3D assets by Kay Lousberg
-
-Tweening & UI Animation: DOTween
+## 📸 Screenshots & Gameplay
 
 ![Açıklama metni](images/1.png)
+
+Figure 1: User Interaction & UI Mapping. Demonstrating the dynamic recipe tracking system (UI Canvas) and core interaction mapping (Grab/Drop/Process) utilizing Unity's Raycasting and Colliders.
+
 ![Açıklama metni](images/2.png)
+
+Figure 2: Scene Architecture & Real-Time UI. The primary gameplay loop featuring a real-time timer, score tracking, and an active task list updating dynamically based on state logic.
+
 ![Açıklama metni](images/3.png)
+
+Figure 3: Asynchronous State Management. Contextual UI (radial timer) triggered during object processing, demonstrating state tracking for independent 3D elements.
+
 ![Açıklama metni](images/4.png)
+
+Figure 4: Task Validation System. The exact moment the system evaluates the assembled 3D object against the target data (customer order) to calculate the score and trigger NPC feedback.
+
 ![Açıklama metni](images/5.png)
+
+Figure 5: Environmental Hazards & Level Progression. Advanced scene management showing dynamic obstacle integration (lava zones) and complex collision detection across different difficulty levels.
+
 ![Açıklama metni](images/6.png)
 ![Açıklama metni](images/7.png)
 ![Açıklama metni](images/8.png)
